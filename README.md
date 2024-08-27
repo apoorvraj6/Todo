@@ -1,6 +1,6 @@
 # Todo App
 
-A simple and responsive full-stack Todo application built using the MERN stack (MongoDB, Express, React, and Node.js). This app allows users to manage their tasks effectively with features like adding, updating, deleting, and searching todos. 
+A full-featured Todo application built with Next.js, Node.js, Express, and MongoDB. This application allows users to create, view, edit, and delete their todos. It provides a simple and responsive user interface to manage tasks effectively.
 
 ## Features
 
@@ -12,7 +12,7 @@ A simple and responsive full-stack Todo application built using the MERN stack (
 
 ## Tech Stack
 
-- **Frontend**: React.js, Tailwind CSS
+- **Frontend**: Next.js, Tailwind CSS , Axios 
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Icons**: React Icons
@@ -37,12 +37,12 @@ A simple and responsive full-stack Todo application built using the MERN stack (
 4. Start the backend server:
    ```bash
    cd todo-backend
-   npm start
+   node server.js
 
 5. Start the frontend server:
    ```bash
    cd ../todo-frontend
-   npm start
+   npm run dev
 
 ## Screenshots
 
