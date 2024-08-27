@@ -13,7 +13,7 @@ export default function TodoApp() {
     const [searchQuery, setSearchQuery] = useState('');  // State for search query
     
 
-    // Fetch todos from the backend
+    
     useEffect(() => {
         axios.get('http://localhost:5000/api/todos')
             .then(response => {
@@ -68,7 +68,7 @@ export default function TodoApp() {
             });
     };
 
-    // Filtered todos based on the search query
+    
     const filteredTodos = todos.filter(todo =>
         todo.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         todo.content.toLowerCase().includes(searchQuery.toLowerCase())
@@ -76,7 +76,7 @@ export default function TodoApp() {
 
     return (
         <div className="flex flex-col md:flex-row md:mx-20 h-screen">
-            {/* Todo List Section */}
+            
             <div className={`w-full md:w-2/5 p-4 ${selectedTodo && 'hidden md:block'}`}>
                 <div className="flex justify-between items-center mb-4">
                     <div className='flex gap-4'>
@@ -120,7 +120,7 @@ export default function TodoApp() {
                 ))}
             </div>
 
-            {/* Todo Details / Add Form Section */}
+            
             <div className={`w-full md:w-3/5 p-4 bg-white shadow-lg rounded-xl ${!selectedTodo && !showAddForm ? 'hidden md:block' : ''}`}>
                 {showAddForm ? (
                     <div className="p-4">
